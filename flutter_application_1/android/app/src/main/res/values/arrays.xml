@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="status_item">
+        <item>Pending</item>
+        <item>Progress</item>
+        <item>Completed</item>
+        <!-- Tambahkan item lain sesuai kebutuhan -->
+    </string-array>
+</resources>

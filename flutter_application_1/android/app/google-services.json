@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "246720325248",
+    "firebase_url": "https://tps-project-app-default-rtdb.firebaseio.com",
+    "project_id": "tps-project-app",
+    "storage_bucket": "tps-project-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246720325248:android:661f92c67a7a9deb4aa865",
+        "android_client_info": {
+          "package_name": "com.example.cuatros"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCH8rFXuARSTT0zv28EzxNT5n-Z-vg9Fg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246720325248:android:ea9cadba1b9458a74aa865",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCH8rFXuARSTT0zv28EzxNT5n-Z-vg9Fg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

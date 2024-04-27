@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.cuatros.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/login_activity">
+        <action
+            android:id="@+id/action_LoginFragment_to_RegisterFragment"
+            app:destination="@id/RegisterFragment" />
+        <action
+            android:id="@+id/action_LoginFragment_to_MenuFragment"
+            app:destination="@id/MenuFragment" />
+        <action
+            android:id="@+id/action_LoginFragment_to_AdminFragment"
+            app:destination="@id/AdminFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/AdminFragment"
+        android:name="com.example.cuatros.AdminFragment"
+        android:label="Admin"
+        tools:layout="@layout/admin_activity">
+        <action
+            android:id="@+id/action_AdminFragment_to_DetailAdminFragment"
+            app:destination="@id/DetailAdminFragment" />
+        <action
+            android:id="@+id/action_MenuFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/DetailAdminFragment"
+        android:name="com.example.cuatros.DetailAdminActivity"
+        android:label="Detail"
+        tools:layout="@layout/detail_admin_activity">
+        <action
+            android:id="@+id/action_DetailAdminFragment_to_AdminFragment"
+            app:destination="@id/AdminFragment" />
+        <action
+            android:id="@+id/action_MenuFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.example.cuatros.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/register_activity">
+        <action
+            android:id="@+id/action_RegisterFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_MenuFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/MenuFragment"
+        android:name="com.example.cuatros.MenuFragment"
+        android:label="Complaints"
+        tools:layout="@layout/menu_activity">
+        <action
+            android:id="@+id/action_MenuFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_MenuFragment_to_AddFragment"
+            app:destination="@id/AddFragment" />
+        <action
+            android:id="@+id/action_MenuFragment_to_DetailFragment"
+            app:destination="@id/DetailFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/AddFragment"
+        android:name="com.example.cuatros.AddFragment"
+        android:label="Add Complaint"
+        tools:layout="@layout/add_complaint_activity">
+        <action
+            android:id="@+id/action_AddFragment_to_MenuFragment"
+            app:destination="@id/MenuFragment" />
+        <action
+            android:id="@+id/action_MenuFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/DetailFragment"
+        android:name="com.example.cuatros.DetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/detail_activity">
+        <action
+            android:id="@+id/action_DetailFragment_to_MenuFragment"
+            app:destination="@id/MenuFragment" />
+        <action
+            android:id="@+id/action_MenuFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.cuatros.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.cuatros.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>
